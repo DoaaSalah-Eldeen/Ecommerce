@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
     public Button SignUp_btn;
     public EditText name_edt,mobile_edt, email_edt,passWord_edt;
     public TextView nameError,mobilErr,emailErr,passErr;
-    public String name ;
+    public String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
