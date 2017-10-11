@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/Red"
+    tools:context="com.example.a3lamya.ecommerce.SignUpActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/sigmup"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter valid name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/nameError"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/avatar"
+        android:background="@drawable/bottumline"
+        android:id="@+id/name_signUp_edtTxt"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter valid E_mail"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/emailError"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/envelope"
+        android:background="@drawable/bottumline"
+        android:id="@+id/email_signUp_edtTxt"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter valid Mobile Number"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/mobileError"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/smartphone"
+        android:background="@drawable/bottumline"
+        android:id="@+id/mobile_signUp_edtTxt"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter valid PassWord"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/passWordError"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/lock"
+        android:background="@drawable/bottumline"
+        android:id="@+id/passWord_signUp_edtTxt"
+        android:hint="PassWord"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="70dp"
+        android:text="SIGN UP"
+        android:id="@+id/signUp_signUp_btn"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/roundshape"
+        />
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
