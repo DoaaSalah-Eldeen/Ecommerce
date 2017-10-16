@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_icon"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/profile_icon"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/language_icon"
+            android:icon="@drawable/translation"
+            android:title="@string/lang" />
+        <item
+            android:id="@+id/about_icon"
+            android:icon="@drawable/settings"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/share_icon"
+            android:icon="@drawable/sharee"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/log_out_icon"
+            android:icon="@drawable/exit"
+            android:title="@string/out" />
+        </group>
+
+
+
+
+</menu>
