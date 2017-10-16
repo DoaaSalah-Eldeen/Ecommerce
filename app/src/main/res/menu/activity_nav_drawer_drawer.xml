@@ -11,7 +11,7 @@
             android:icon="@drawable/profile"
             android:title="@string/profile" />
         <item
-            android:id="@+id/language_icon"
+            android:id="@+id/language_icone"
             android:icon="@drawable/translation"
             android:title="@string/lang" />
         <item

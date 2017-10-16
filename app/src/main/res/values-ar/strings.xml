@@ -8,4 +8,5 @@
     <string name="lang">اللغة</string>
     <string name="out">تسجيل الخروج</string>
     <string name="profile">الملف الشخصى</string>
+    <string name="name">الاسم</string>
 </resources>

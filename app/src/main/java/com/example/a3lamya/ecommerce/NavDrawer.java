@@ -82,6 +82,7 @@ public class NavDrawer extends AppCompatActivity
 
         if (id == R.id.home_icon) {
             // Handle the camera action
+            String s="n";
         } else if (id == R.id.profile_icon) {
 
         } else if (id == R.id.language_icon) {

@@ -14,5 +14,6 @@
     <string name="lang">Language</string>
     <string name="out">Log Out</string>
     <string name="profile">Profile</string>
+    <string name="name">Name</string>
 
 </resources>
