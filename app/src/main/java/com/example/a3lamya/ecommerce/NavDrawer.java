@@ -1,5 +1,6 @@
 package com.example.a3lamya.ecommerce;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class NavDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Spinner mLanguage = (Spinner) findViewById(R.id.spLanguage);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +46,7 @@ public class NavDrawer extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -85,11 +92,31 @@ public class NavDrawer extends AppCompatActivity
             String s="n";
         } else if (id == R.id.profile_icon) {
 
-        } else if (id == R.id.language_icon) {
+        } else if (id == R.id.language_icone) {
+            ArrayAdapter mAdapter = new ArrayAdapter<String>(NavDrawer.this, android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.language_option));
+            mLanguage.setAdapter(mAdapter);
+            mLanguage.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
 
         } else if (id == R.id.about_icon) {
 
         } else if (id == R.id.share_icon) {
+
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_TEXT, "com.example.a3lamya.ecommerce");
+            startActivity(Intent.createChooser(intent, "Share"));
 
         } else if (id == R.id.log_out_icon) {
 
